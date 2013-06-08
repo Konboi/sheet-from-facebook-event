@@ -1,4 +1,4 @@
-facebook-event-for-sheet
+Sheet from facebook event
 ========================
 
-generate spred sheet from google event
+generate spred sheet from facebook event
