@@ -1,4 +1,9 @@
 SheetFromFacebookEvent::Application.routes.draw do
+
+  namespace 'facebook' do
+    get 'oauth'
+    get 'callback'
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
