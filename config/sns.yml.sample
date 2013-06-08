@@ -1,0 +1,11 @@
+development:
+  facebook:
+    app_id: <APP ID>
+    app_secret: <APP SECRET>
+    callback_url: <CALLBACK URL>
+
+production:
+  facebook:
+    app_id: <APP ID>
+    app_secret: <APP SECRET>
+    callback_url: <CALLBACK URL>

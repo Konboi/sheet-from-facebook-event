@@ -16,3 +16,4 @@
 /tmp
 vendor/bundle
 config/database.yml
+config/sns.yml
