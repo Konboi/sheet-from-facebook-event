@@ -16,6 +16,13 @@ class FacebookController < BaseController
       redirect_to :root and return
     end
       flash[:notice] = 'facebookログインに成功しました'
-    redirect_to :root
+
+    redirect_to list_path
+  end
+
+  def logout
+    session = nil
+
+    redirect_to root_path
   end
 end
