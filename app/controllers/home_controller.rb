@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 class HomeController < BaseController
-  before_filter :facebook_oauth_required, :except => [:index]
+  before_action :facebook_oauth_required, :except => [:index]
 
   def index
   end
