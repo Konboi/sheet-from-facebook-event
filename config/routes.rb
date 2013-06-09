@@ -1,5 +1,11 @@
 SheetFromFacebookEvent::Application.routes.draw do
 
+  root 'home#index'
+
+  get '/list'     => "home#list"
+  get '/generate' => "home#generate"
+  post '/finish'  => "home#finish"
+  get '/logout'    => "facebook#logout"
   namespace 'facebook' do
     get 'oauth'
     get 'callback'
