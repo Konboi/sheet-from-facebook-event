@@ -1,0 +1,11 @@
+<h3>スプレッドシートを生成する情報を入力してください</h3>
+
+<%= form_tag(finish_path, method: 'post') do %>
+  <p>Google ID: <input type="text" name="google_id"/></p>
+  <p>Google Password: <input type="password" name="google_password"/></p>
+  <p>スプレッドシートID: <input type="text" name="spreadsheet_id"/></p>
+  <p><input type="hidden" value="<%= @event_id %>" name="event_id"/></p>
+  <input type="submit" value="生成">
+<% end %>
+
+

@@ -1,0 +1,15 @@
+<% if flash['message'] %>
+  <h3><%= flash['message'] %></h3>
+<% end %>
+
+<% @event.each do |event| %>
+<h2><%= event['name'] %></h2>
+<p>日にち: <%= event['start_time'] %></p>
+<a href="<%= generate_path(event_id: event['id'])  %>">スプレッドシートに名簿を作る</a>
+<p>参加者</p>
+
+<% event['attending']['data'].each do |member| %>
+<p><%= member['name'] %></p>
+<% end %>
+
+<% end %>
